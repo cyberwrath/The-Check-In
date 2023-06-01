@@ -1,0 +1,105 @@
+.alert {
+    @apply relative rounded-md px-5 py-4;
+    &:not(.show) {
+        @apply hidden;
+    }
+    &.alert-dismissible {
+        @apply pl-5 pr-16;
+    }
+    .btn-close {
+        @apply btn shadow-none border-0 absolute right-0 my-auto mr-2;
+        &:focus {
+            @apply ring-0;
+        }
+    }
+}
+
+// Alert Colors
+.alert-primary {
+    @apply bg-theme-1 text-white;
+}
+.alert-secondary {
+    @apply bg-gray-200 text-gray-600;
+}
+.alert-success {
+    @apply bg-theme-9 text-white;
+}
+.alert-warning {
+    @apply bg-theme-12 text-gray-900;
+}
+.alert-danger {
+    @apply bg-theme-6 text-white;
+}
+.alert-dark {
+    @apply bg-gray-800 text-white;
+}
+
+.dark {
+    .alert-secondary {
+        @apply bg-dark-5 text-gray-400;
+    }
+    .alert-dark {
+        @apply bg-dark-6 text-gray-400;
+    }
+}
+
+// Outline Button
+.alert-outline-primary {
+    @apply border border-theme-1 text-theme-1;
+}
+.alert-outline-secondary {
+    @apply border border-gray-300 text-gray-700;
+}
+.alert-outline-success {
+    @apply border border-theme-9 text-theme-9;
+}
+.alert-outline-warning {
+    @apply border border-theme-12 text-theme-12;
+}
+.alert-outline-danger {
+    @apply border border-theme-6 text-theme-6;
+}
+.alert-outline-dark {
+    @apply border border-gray-800 text-gray-800;
+}
+
+.dark {
+    .alert-outline-primary {
+        @apply border-theme-3 text-theme-3;
+    }
+    .alert-outline-secondary {
+        @apply border-gray-700 text-gray-400;
+    }
+    .alert-outline-success {
+        @apply border-theme-9;
+    }
+    .alert-outline-warning {
+        @apply border-theme-12;
+    }
+    .alert-outline-danger {
+        @apply border-theme-6;
+    }
+    .alert-outline-dark {
+        @apply border-gray-700 text-gray-500;
+    }
+}
+
+// Button Soft Colors
+.alert-primary-soft {
+    @apply bg-theme-1 border-theme-1 bg-opacity-20 border-opacity-5 text-theme-10;
+}
+.alert-secondary-soft {
+    @apply bg-gray-300 border-gray-300 bg-opacity-20 border-opacity-5 text-gray-500;
+}
+.alert-success-soft {
+    @apply bg-theme-9 border-theme-9 bg-opacity-20 border-opacity-5 text-theme-9;
+}
+.alert-warning-soft {
+    @apply bg-theme-12 border-theme-12 bg-opacity-20 border-opacity-5 text-theme-11;
+}
+.alert-danger-soft {
+    @apply bg-theme-6 border-theme-6 bg-opacity-20 border-opacity-5 text-theme-6;
+}
+.alert-dark-soft {
+    @apply bg-gray-800 border-gray-800 bg-opacity-20 border-opacity-5 text-gray-600;
+}
